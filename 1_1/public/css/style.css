@@ -1,0 +1,20 @@
+body {
+  background-color: aqua;
+}
+
+nav {
+  background-color: black;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  justify-content: space-between;
+  margin: 100px 10%;
+}
+
+a {
+  color: inherit;
+}
