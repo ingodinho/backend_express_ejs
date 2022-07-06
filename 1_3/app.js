@@ -4,9 +4,9 @@ const {navItems} = require('./data/navItems');
 const app = express();
 const PORT = 9000;
 
-const renderPage = (url,fileName) => {
+const renderPage = (url,filePath) => {
   app.get(url, ((_, res) => {
-    res.render(fileName, {navItems: navItems});
+    res.render(filePath, {navItems: navItems});
   }))
 }
 

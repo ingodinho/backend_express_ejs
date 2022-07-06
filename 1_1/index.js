@@ -20,7 +20,7 @@ navItems.forEach((el) => {
 )})
 
 app.use((_,res) => {
-  res.status(404).render('error');
+  res.status(404).send('error - 404 site not found');
 })
 
 app.listen(PORT, () => console.log('server starts listening on port', PORT))
